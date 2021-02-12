@@ -24,8 +24,8 @@ class Monoid:
         self.function = function
 
     @staticmethod
-    def monoid_from_generators(generators: set[T], relation: Mapping[[T], T]) -> Monoid:
+    def monoid_from_generators(generators: set[T], equivalence_relation: Mapping[[T], T]) -> Monoid:
         raise NotImplementedError
 
-    def submonoid_from_equivalence_relation(self, relation: Mapping[[T], T]) -> Monoid:
+    def submonoid_from_equivalence_relation(self, equivalence_relation: Mapping[[T], T]) -> Monoid:
         raise NotImplementedError
