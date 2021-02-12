@@ -27,3 +27,6 @@ class Monoid:
 
     def submonoid_from_equivalence_relation(self, equivalence_relation: Mapping[[T], T]) -> Monoid:
         raise NotImplementedError
+
+    def submonoids(self):
+        raise NotImplementedError
