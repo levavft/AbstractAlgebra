@@ -6,12 +6,14 @@ T = TypeVar('T', int, float, str)
 
 
 class Monoid:
+    """
+    We use the multiplicative notation, e.g: 1, S, f where:
+    for all a,b in S:
+    f(1,a)=f(a,1)=a
+    f(a,b) in S
+    """
     def __init__(self, one: T, elements: set[T], function: Callable[[T, T], T]):
         """
-        We use the multiplicative notation, e.g: 1, S, f where:
-        for all a,b in S:
-        f(1,a)=f(a,1)=a
-        f(a,b) in S
         :param one: 1
         :param elements: S
         :param function: f
