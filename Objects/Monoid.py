@@ -1,8 +1,6 @@
 from __future__ import annotations
 from collections.abc import Callable, Mapping
-from typing import TypeVar
-
-T = TypeVar('T', int, float, str)
+from Common.Types import T
 
 
 class Monoid:
